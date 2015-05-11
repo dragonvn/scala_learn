@@ -12,3 +12,7 @@ libraryDependencies ++= Seq(
   cache,
   ws
 )
+
+libraryDependencies ++= Seq(
+  "com.github.ironfish" %% "akka-persistence-mongo-casbah"  % "0.7.5" % "compile")
+
