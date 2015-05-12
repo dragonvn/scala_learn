@@ -6,6 +6,7 @@ lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
 scalaVersion := "2.11.1"
 
+//library be used in play
 libraryDependencies ++= Seq(
   jdbc,
   anorm,
@@ -13,6 +14,9 @@ libraryDependencies ++= Seq(
   ws
 )
 
+
+// only for Play 2.3.x
 libraryDependencies ++= Seq(
-  "com.github.ironfish" %% "akka-persistence-mongo-casbah"  % "0.7.5" % "compile")
+  "org.reactivemongo" %% "play2-reactivemongo" % "0.10.5.0.akka23"
+)
 
